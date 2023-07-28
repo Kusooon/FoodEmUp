@@ -484,6 +484,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7084118487059927375, guid: b2b9cabf028e1fa4296ad2ba47de5085, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1253215267}
+    - target: {fileID: 7084118487059927375, guid: b2b9cabf028e1fa4296ad2ba47de5085, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: btn_change_scene
+      objectReference: {fileID: 0}
+    - target: {fileID: 7084118487059927375, guid: b2b9cabf028e1fa4296ad2ba47de5085, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: NextScene, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7084118487059927375, guid: b2b9cabf028e1fa4296ad2ba47de5085, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Scene4
+      objectReference: {fileID: 0}
     - target: {fileID: 7229627005731640970, guid: b2b9cabf028e1fa4296ad2ba47de5085, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
