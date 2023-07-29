@@ -12,6 +12,8 @@ public class DishSpawner : MonoBehaviour
     private int randomDishID;
     private Vector2 SpawnPosition = new Vector2();
 
+    public int totalDishesCompleted = 0;
+
     [SerializeField] private List<Slot> slots = new List<Slot>();
     [SerializeField] private TextMeshProUGUI text;
 
@@ -23,7 +25,9 @@ public class DishSpawner : MonoBehaviour
     void Awake()
     {
         randomDish();
+        totalDishesCompleted = 0;
     }
+
     public void randomDish()
     {
         if (currentDish == null)
@@ -41,6 +45,8 @@ public class DishSpawner : MonoBehaviour
             basket.ClearBasket();
             currentDish = null;
             randomDish();
+            totalDishesCompleted += 1;
+            Debug.Log($"Total dishes completed: {totalDishesCompleted}");
 
         }
         else if (basket.IsFull())
