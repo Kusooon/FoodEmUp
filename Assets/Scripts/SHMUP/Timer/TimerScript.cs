@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,7 +9,7 @@ public class TimerScript : MonoBehaviour
     [SerializeField] private float TimeLeft;
     public bool TimerOn = false;
 
-    [SerializeField] private Text TimerTxt;
+    [SerializeField] private TextMeshProUGUI TimerTxt;
 
     void Start()
     {

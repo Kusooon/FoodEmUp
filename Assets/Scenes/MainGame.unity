@@ -2150,7 +2150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeLeft: 300
   TimerOn: 1
-  TimerTxt: {fileID: 0}
+  TimerTxt: {fileID: 1289958650}
 --- !u!114 &1289958650
 MonoBehaviour:
   m_ObjectHideFlags: 0
