@@ -25,8 +25,8 @@ public class TimerScript : MonoBehaviour
                 TimeLeft -= Time.deltaTime;
                 updateTimer(TimeLeft);
             }
-            else
-            {
+            else if (TimeLeft <= 0)
+            {   
                 Debug.Log("Time is UP!");
                 TimeLeft = 0;
                 TimerOn = false;
