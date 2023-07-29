@@ -9,6 +9,10 @@ public class TimerScript : MonoBehaviour
     [SerializeField] private float TimeLeft;
     public bool TimerOn = false;
 
+    [SerializeField] NextScene NextScene;
+
+    [SerializeField] public string stringlol;
+
     [SerializeField] private TextMeshProUGUI TimerTxt;
 
     void Start()
@@ -26,8 +30,9 @@ public class TimerScript : MonoBehaviour
                 updateTimer(TimeLeft);
             }
             else if (TimeLeft <= 0)
-            {   
-                Debug.Log("Time is UP!");
+            {
+                NextScene.btn_change_scene("GameOver");
+                
                 TimeLeft = 0;
                 TimerOn = false;
             }

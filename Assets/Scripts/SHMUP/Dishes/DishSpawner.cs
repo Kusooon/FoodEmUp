@@ -17,7 +17,8 @@ public class DishSpawner : MonoBehaviour
 
     [SerializeField] private SpriteRenderer thought;
 
-    
+    [SerializeField] NextScene NextScene;
+    [SerializeField] public string stringlol;
 
     void Awake()
     {
@@ -45,6 +46,7 @@ public class DishSpawner : MonoBehaviour
         else if (basket.IsFull())
         {
             Debug.Log("Game Over");
+            NextScene.btn_change_scene(stringlol);
         }
         
     }

@@ -7,10 +7,10 @@ public class IngredientBehavior : MonoBehaviour
     [SerializeField] private float enemySpeed = 5f;
     [SerializeField] IngredientType type;
 
+
     private void FixedUpdate()
     {
         transform.Translate(enemySpeed * Time.deltaTime * -1, 0, 0);
-
         if (transform.position.x < -9)
         {
             checkTypeOnDestroy();
