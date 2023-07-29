@@ -753,7 +753,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countTxt: {fileID: 218208614}
-  totalDishesNeeded: 3
+  totalDishesNeeded: 1
   dishCount: {fileID: 535371839}
   NextScene: {fileID: 542539639}
   stringlol: 
