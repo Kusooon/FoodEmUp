@@ -19,7 +19,7 @@ public class DishSpawner : MonoBehaviour
 
     
 
-    void Start()
+    void Awake()
     {
         randomDish();
     }
